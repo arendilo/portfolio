@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earendilo Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script>document.body.classList.add('js');</script>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <span class="pixel-heart small" aria-hidden="true"></span>
+      Earendilo Portfolio 
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+  <!-- HERO -->
+  <section class="section hero container">
+    <div class="hero-avatar reveal" style="--x:0px; --y:-30px; --r:0deg; --d:120ms;">
+      <!-- Place your custom avatar image in assets/images/avatar.png -->
+      <img src="assets/images/pixelMe.png" alt="Earendilo Avatar" class="avatar-img" onerror="this.src='https://api.dicebear.com/7.x/pixel-art/svg?seed=Earendilo'">
+    </div>
+    <div class="hero-copy">
+      <span class="eyebrow reveal" style="--x:-44px; --y:-14px; --r:-7deg; --d:0ms;"><span aria-hidden="true"></span> DESIGN &amp; CREATION</span>
+      <h1 id="heroTitle">Hi, I'm Earendilo!<br></h1> 
+      <p class="lede reveal" style="--x:26px; --y:22px; --r:3deg; --d:640ms;">A Computer Science student who moves between Figma frames, lines of code, and GarageBand sessions. I like making things that are useful, a little playful, and unmistakably mine.</p>
+      <div class="hero-cta reveal" style="--x:-18px; --y:30px; --r:-3deg; --d:760ms;">
+        <a href="projects.html" class="btn">View My Work <span class="pixel-heart small brown" aria-hidden="true"></span></a>
+        <a href="assets/CV_Earendilo.pdf" download class="btn ghost">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section tint-pink" id="about">
+    <div class="container about-grid">
+      <div class="about-portrait">
+        <!-- You can replace the letter E with an image: <img src="assets/images/portrait.png" alt="Earendilo"> -->
+        <img src="assets/images/potraits.jpeg" alt="Earendilo">
+      </div>
+      <div>
+        <span class="eyebrow">ABOUT ME</span>
+        <h2 style="margin-top:14px;">A little bit of everything, on purpose</h2>
+        <p style="color:var(--brown); margin-top:14px; max-width:56ch;">I'm a UI/UX designer who genuinely loves what I do. 
+          I started learning design back in high school and haven't stopped since. 
+          I believe design isn't just about making things look pretty,  
+          it's the best way to express how you feel and tell a story.
+          I'm an extrovert at heart, so I thrive in team settings where 
+          ideas bounce around and something bigger gets built together. 
+          I also dabble in graphic design, frontend coding, and songwriting, 
+          because when I don't have words to say out loud, I put them in a song instead.</p>
+
+        <div class="about-card" style="margin-top:22px;">
+          <h3>What I care about</h3>
+          <p style="color:var(--brown-mute);">Building things that feel warm and human, even when they're technical — clean interfaces, thoughtful code, and honest storytelling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & TOOLS -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow"><span class="pixel-heart small" aria-hidden="true"></span> SKILLS &amp; TOOLS</span>
+        <h2 style="margin-top: 14px;">What I work with</h2>
+      </div>
+
+      <!-- Category: Design -->
+      <div class="skills-category-group">
+        <div class="skills-category-header">
+          <span class="category-badge design-badge">Design</span>
+          <div class="category-line"></div>
+        </div>
+        <div class="skills-category-grid">
+          <!-- Figma -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/><path d="M12 9h3.5a3.5 3.5 0 1 1-3.5 3.5V9z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 0 1-3.5 3.5A3.5 3.5 0 0 1 5 19.5z"/></svg>
+            </div>
+            <span class="skill-label">Figma</span>
+          </div>
+          <!-- Adobe Photoshop -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon" style="font-size: 0.9rem;">Ps</div>
+            <span class="skill-label">Adobe Photoshop</span>
+          </div>
+          <!-- Illustrator -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon" style="font-size: 0.9rem;">Ai</div>
+            <span class="skill-label">Illustrator</span>
+          </div>
+          <!-- UI/UX & AI Design -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><path d="M14 14h.01"/><path d="M17 17h.01"/></svg>
+            </div>
+            <span class="skill-label">UI/UX &amp; AI Design</span>
+          </div>
+          <!-- AI-Powered Prototyping -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+            </div>
+            <span class="skill-label">AI-Powered Prototyping</span>
+          </div>
+          <!-- Generative AI for Asset Creation -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m15 4 5 2-5 2M15 4l-5 2 5 2M15 4v16M2 12h3M20 12h2"/></svg>
+            </div>
+            <span class="skill-label">Generative AI for Asset Creation</span>
+          </div>
+          <!-- AI-Assisted User Research & Persona Design -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <span class="skill-label" style="font-size: 0.88rem; line-height: 1.2;">AI-Assisted User Research &amp; Persona Design</span>
+          </div>
+          <!-- Claude Design -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box pink-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M12 3l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+            </div>
+            <span class="skill-label">Claude Design</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category: Code -->
+      <div class="skills-category-group">
+        <div class="skills-category-header">
+          <span class="category-badge code-badge">Code</span>
+          <div class="category-line"></div>
+        </div>
+        <div class="skills-category-grid">
+          <!-- HTML -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <span class="skill-label">HTML</span>
+          </div>
+          <!-- CSS -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <span class="skill-label">CSS</span>
+          </div>
+          <!-- JavaScript -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon" style="font-size: 0.9rem;">JS</div>
+            <span class="skill-label">JavaScript</span>
+          </div>
+          <!-- Node.js/Express -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 17 4.48S16 8 11.2 13.8A7 7 0 0 1 11 20z"/></svg>
+            </div>
+            <span class="skill-label">Node.js/Express</span>
+          </div>
+          <!-- Flutter -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14.73 3L7.75 9.98 12.12 14.35 21.05 5.42z"/><path d="M7.74 14.36L3.37 18.73l4.37 4.37 11.09-11.09z"/></svg>
+            </div>
+            <span class="skill-label">Flutter</span>
+          </div>
+          <!-- Python -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2c3 0 5 2 5 5v3H9V7c0-3 2-5 5-5z"/><path d="M12 22c-3 0-5-2-5-5v-3h8v3c0 3-2 5-5 5z"/><circle cx="10" cy="5" r="1"/><circle cx="14" cy="19" r="1"/></svg>
+            </div>
+            <span class="skill-label">Python</span>
+          </div>
+          <!-- MySQL -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/><path d="M3 12c0 1.66 4 3 9 3s9-1.34 9-3"/></svg>
+            </div>
+            <span class="skill-label">MySQL</span>
+          </div>
+          <!-- C++ -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon" style="font-size: 0.9rem;">C++</div>
+            <span class="skill-label">C++</span>
+          </div>
+          <!-- Claude Code -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box green-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18M12 3l3 9 9 3-9 3-3 9-3-9-9-3 9-3z"/></svg>
+            </div>
+            <span class="skill-label">Claude Code</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category: Music -->
+      <div class="skills-category-group">
+        <div class="skills-category-header">
+          <span class="category-badge music-badge">Music</span>
+          <div class="category-line"></div>
+        </div>
+        <div class="skills-category-grid">
+          <!-- Songwriting -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box purple-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+            </div>
+            <span class="skill-label">Songwriting</span>
+          </div>
+          <!-- Mixing & Mastering -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box purple-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"/><line x1="4" y1="10" x2="4" y2="3"/><line x1="12" y1="21" x2="12" y2="12"/><line x1="12" y1="8" x2="12" y2="3"/><line x1="20" y1="21" x2="20" y2="16"/><line x1="20" y1="12" x2="20" y2="3"/><line x1="2" y1="14" x2="6" y2="14"/><line x1="10" y1="8" x2="14" y2="8"/><line x1="18" y1="16" x2="22" y2="16"/></svg>
+            </div>
+            <span class="skill-label">Mixing &amp; Mastering</span>
+          </div>
+          <!-- GarageBand -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box purple-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="18" rx="2"/><line x1="6" y1="3" x2="6" y2="21"/><line x1="10" y1="3" x2="10" y2="21"/><line x1="14" y1="3" x2="14" y2="21"/><line x1="18" y1="3" x2="18" y2="21"/><line x1="2" y1="12" x2="22" y2="12"/></svg>
+            </div>
+            <span class="skill-label">GarageBand</span>
+          </div>
+          <!-- BandLab -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box purple-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5v14M22 9v6M7 7v10M2 10v4"/></svg>
+            </div>
+            <span class="skill-label">BandLab</span>
+          </div>
+          <!-- Logic Pro -->
+          <div class="skill-item-card">
+            <div class="skill-icon-box purple-icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            </div>
+            <span class="skill-label">Logic Pro</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section tint-green" id="experience">
+    <div class="container">
+      <h2 class="experience-title">Experience Journey</h2>
+      <div class="experience-grid">
+        <!-- Card 1 (Newest: 2025 — 2026) -->
+        <div class="experience-card">
+          <span class="experience-badge badge-top-left badge-pink">★</span>
+          <div class="experience-thumb">
+            <img src="assets/images/exp_freshman.png" alt="Freshman Chaperone Committee" onerror="this.parentElement.style.display='none';">
+          </div>
+          <span class="experience-date">2025 — 2026</span>
+          <h3>Freshman Chaperone Committee - Freshman Leader &amp; Freshman Partner</h3>
+          <span class="experience-company">BINUS University • Volunteer</span>
+          <p>I mentored new students through orientation and their first year, helping them adapt to campus culture and academic life while providing major-specific guidance under the First Year Program (FYP).</p>
+        </div>
+
+        <!-- Card 2 (2025 — 2026) -->
+        <div class="experience-card">
+          <span class="experience-badge badge-bottom-right badge-green">🚀</span>
+          <div class="experience-thumb">
+            <img src="assets/images/exp_graduation.png" alt="Graduation Event Committee" onerror="this.parentElement.style.display='none';">
+          </div>
+          <span class="experience-date">2025 — 2026</span>
+          <h3>Graduation Event Committee</h3>
+          <span class="experience-company">SMK Pustek Serpong</span>
+          <p>Coordinated comprehensive event logistics and served as a core member of the documentation team for a graduation ceremony. Managed end-to-end operations—including venue setup, guest arrangements, and team communication—while simultaneously capturing and archiving high-quality visual assets to preserve key event milestones.</p>
+        </div>
+
+        <!-- Card 3 (2023) -->
+        <div class="experience-card">
+          <div class="experience-thumb">
+            <img src="assets/images/exp_himti.png" alt="HIMTI Creative and Design Activist" onerror="this.parentElement.style.display='none';">
+          </div>
+          <span class="experience-date">2023</span>
+          <h3>HIMTI Creative and Design Activist</h3>
+          <span class="experience-company">BINUS University • Volunteer</span>
+          <p>Served as a Creative and Design Activist for HIMTI (BINUS University's IT Student Organization), spearheading the creation of engaging social media assets, custom logos, and event posters. Effectively translated organizational goals into cohesive visual identities, driving student engagement and successfully promoting various IT-focused initiatives through high-quality, targeted graphic design.</p>
+        </div>
+
+        <!-- Card 4 (2023) -->
+        <div class="experience-card">
+          <div class="experience-thumb">
+            <img src="assets/images/exp_yearbook.png" alt="High School Yearbook Design" onerror="this.parentElement.style.display='none';">
+          </div>
+          <span class="experience-date">2023</span>
+          <h3>High School Yearbook Design Freelance</h3>
+          <span class="experience-company">Commissions • Freelance</span>
+          <p>Spearheaded the comprehensive design of a high school yearbook, managing all layout composition, typography, and image editing. Successfully translated the school's identity and milestones into cohesive, visually engaging graphics, overseeing the creative process from initial concept to final print-ready production.</p>
+        </div>
+
+        <!-- Card 5 (2022 — 2023) -->
+        <div class="experience-card">
+          <div class="experience-thumb">
+            <img src="assets/images/exp_salt.png" alt="UI/UX Designer Internship" onerror="this.parentElement.style.display='none';">
+          </div>
+          <span class="experience-date">2022 — 2023</span>
+          <h3>UI/UX Designer Internship</h3>
+          <span class="experience-company">PT. Ako Media Asia (SALT)</span>
+          <p>Designed and developed user-centric interfaces and interactive prototypes using Figma, Photoshop, and Illustrator. Translated complex client concepts into clean, functional designs with a strong emphasis on intuitive layouts and visual hierarchy. Drove iterative design processes by effectively integrating stakeholder feedback to optimize usability and ensure visual consistency across all digital touchpoints.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS OVERVIEW -->
+  <section class="section" id="work">
+    <div class="container">
+      <div class="section-header">
+        <span class="eyebrow">SELECTED WORK</span>
+        <h2>A few favorites</h2>
+        <p>Three projects that show how I think, across code, interface, and sound.</p>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="assets/images/stokko.png" alt="STOKKO" onerror="this.style.display='none';">
+            STOKKO
+          </div>
+          <div class="project-body">
+            <span class="project-tag">WEBSITE</span>
+            <h3>STOKKO</h3>
+            <p>A web-based marketplace built for UMKM sellers, with price insights and seller analytics.</p>
+            <div class="project-tools">Node.js · Express · MySQL · JWT · Google OAuth</div>
+            <div class="project-links"><a href="projects.html">Case Study</a></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb g">
+            <img src="assets/images/swapify.png" alt="Swapify" onerror="this.style.display='none';">
+            Swapify
+          </div>
+          <div class="project-body">
+            <span class="project-tag">UI/UX DRAFT</span>
+            <h3>Swapify</h3>
+            <p>A peer-to-peer skill exchange platform concept designed to tackle student isolation.</p>
+            <div class="project-tools">Figma · User Flows · System Architecture</div>
+            <div class="project-links"><a href="projects.html">Case Study</a></div>
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-thumb">
+            <img src="assets/images/iwlyg.png" alt="I Won't Let You Go" onerror="this.style.display='none';">
+            IWLYG
+          </div>
+          <div class="project-body">
+            <span class="project-tag">SONGS · FAVORITE TRACK</span>
+            <h3>I Won't Let You Go</h3>
+            <p>A deeply personal track capturing the quiet agony and stubborn promise of loving an avoidant partner.</p>
+            <div class="project-tools">Logic Pro · GarageBand · Songwriting</div>
+            <div class="project-links"><a href="projects.html">Listen Track</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="projects-cta">
+        <a href="projects.html" class="btn">View All Projects <span class="pixel-heart small brown" aria-hidden="true"></span></a>
+      </div>
+    </div>
+  </section>
+
+   <!-- REDESIGNED FOOTER -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <h2>Let's Connect!</h2>
+      <p>I'm always open to new adventures and creative collaborations. Say hi!</p>
+      
+      <div class="footer-pills">
+        <a class="footer-pill" href="mailto:earendilo.hardiyan@binus.ac.id">
+          <img src="assets/images/email.png" alt="Email" width="16" height="16">
+          Email
+        </a>
+        <a class="footer-pill" href="tel:+6281288467698">
+          <img src="assets/images/phone.png" alt="Phone" width="16" height="16">
+          Phone
+        </a>
+        <a class="footer-pill" href="https://linkedin.com/in/earendilohardiyan/" target="_blank" rel="noopener">
+          <img src="assets/images/linkedin.png" alt="LinkedIn" width="16" height="16">
+          LinkedIn
+        </a>
+      </div>
+
+      <div class="footer-squares">
+        <a class="footer-square blue" href="https://open.spotify.com/artist/2UfcVm0ywszIjELdLXjzBc?si=ScSi7GQ7Rb-5ZwWjm5N5Hw" target="_blank" rel="noopener" aria-label="LinkedIn Share">
+          <img src="assets/images/spotify.png" alt="Share" width="20" height="20">
+        </a>
+        <a class="footer-square pink" href="https://www.instagram.com/earndilo/" target="_blank" rel="noopener" aria-label="Instagram">
+          <img src="assets/images/instagram.png" alt="Instagram" width="20" height="20">
+        </a>
+        <a class="footer-square green" href="https://www.behance.net/dilosblog" target="_blank" rel="noopener" aria-label="Behance / Creative Portfolio">
+          <img src="assets/images/behance.png" alt="Behance" width="20" height="20">
+        </a>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Earendilo. All rights reserved.</span>
+        <span>Designed &amp; built with love and passion.</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<!-- PROJECT MODAL OVERLAY -->
+<div id="projectModal" class="modal-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="modal-backdrop"></div>
+  <div class="modal-container">
+    <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close Modal">&times;</button>
+    <div class="modal-banner">
+      <img id="modalImg" src="" alt="Project Preview">
+    </div>
+    <div class="modal-content-body">
+      <span id="modalTag" class="project-tag"></span>
+      <h2 id="modalTitle" class="modal-title"></h2>
+      <div id="modalTools" class="project-tools"></div>
+      <div id="modalBody" class="modal-description"></div>
+      <div id="modalLinks" class="project-links"></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
