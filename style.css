@@ -598,14 +598,24 @@ body.js.intro-ready .hero h1{
 .filter-btn:hover{ transform: translate(-1px,-1px); }
 .filter-btn.active{ background: var(--mustard); }
 
-.full-project-grid{
+.full-project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+  gap: 32px;
   margin-top: 36px;
+  align-items: start;
 }
-.full-project-grid .project-card{ display: grid; grid-template-columns: 1fr; }
-.project-card.hidden{ display: none; }
+.full-project-grid .project-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.full-project-grid .project-card.song-card {
+  grid-column: 1 / -1;
+}
+.project-card.hidden {
+  display: none !important;
+}
 
 /* ---------- responsive ---------- */
 @media (max-width: 860px){
